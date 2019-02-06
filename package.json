@@ -1,0 +1,58 @@
+{
+  "name": "glot-react",
+  "version": "0.0.1",
+  "description": "React components to enable usage of glot",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --coverage true src test",
+    "test_watch": "NODE_ENV=test jest src test --watch --bail --runInBand",
+    "build": "NODE_ENV=production babel src --out-dir lib",
+    "format": "prettier --write src/**/*",
+    "watch": "NODE_ENV=staging babel src --out-dir lib --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CodogoFreddie/glot-react.git"
+  },
+  "keywords": [
+    "glot",
+    "react"
+  ],
+  "author": "Freddie Ridell <contact@freddieridell.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodogoFreddie/glot-react/issues"
+  },
+  "homepage": "https://github.com/CodogoFreddie/glot-react#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-freddie-ridell": "0.0.8",
+    "eslint": "^5.13.0",
+    "eslint-config-react-app": "^3.0.6",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest-cli": "^24.1.0",
+    "prettier": "^1.16.4"
+  },
+  "babel": {
+    "presets": [
+      "freddie-ridell"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "files": [
+    "/index.js",
+    "/lib",
+    "/main.js"
+  ],
+  "prettier": {
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": true
+  }
+}
