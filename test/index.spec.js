@@ -69,7 +69,7 @@ describe("useGlot", () => {
 });
 
 describe("Glot", () => {
-	it("substitutes, its children for a glot string", () => {
+	it("substitutes its children for a glot string", () => {
 		const rendered = renderer.create(
 			<GlotProvider dict={dict} lang="en">
 				<Glot>greeting</Glot>
